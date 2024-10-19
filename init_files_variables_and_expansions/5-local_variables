@@ -1,2 +1,2 @@
 #!/bin/bash
-( printenv ; declare -f ; declare -p ) | less
+printenv | less & declare -p | less & declare -f | less
