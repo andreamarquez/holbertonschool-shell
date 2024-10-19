@@ -1,2 +1,2 @@
 #!/bin/bash
-printenv | less & declare -p | less & declare -f | less
+(set | grep -v BASH_EXECUTION_STRING | grep -v BASH_ARGV) | less
